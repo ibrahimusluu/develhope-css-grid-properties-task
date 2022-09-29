@@ -1,0 +1,126 @@
+:root {
+    --yellow-red-height: 180px;
+    --padding-top: 20px;
+    --padding-top-numbers-letters: 8px;
+}
+
+body {
+    margin: 0;
+}
+
+section.grid {
+    display: grid;
+    gap: 1rem;
+    text-indent: 15px;
+}
+
+section.numbers {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: "one two"
+                        "three four";
+    justify-content: center;
+}
+
+section.letters {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: "a b"
+                        "c d";
+    justify-content: center;
+}
+
+#green {
+    height: calc((var(--yellow-red-height) + var(--padding-top))/2 - var(--padding-top));
+    grid-column: span 3;
+    background-color: lightgreen;
+    padding-top: var(--padding-top);
+}
+
+#yellow {
+    background-color: lightyellow;
+    height: var(--yellow-red-height);
+    padding-top: var(--padding-top);
+}
+
+#red {
+    background-color: lightcoral;
+    padding-top: var(--padding-top);
+}
+
+#blue {
+    grid-row: span 2;
+    background-color: lightblue;
+    padding-top: var(--padding-top);
+}
+
+#orange {
+    height: calc((var(--yellow-red-height) + var(--padding-top))/2 - var(--padding-top));
+    grid-column: span 2;
+    background-color: lightsalmon;
+    padding-top: var(--padding-top);
+}
+
+#one {
+    grid-area: one;
+    background-color: white;
+    height: 50px;
+    width: 80px;
+    padding-top: var(--padding-top-numbers-letters);
+}
+
+#two {
+    grid-area: two;
+    background-color: white;
+    height: 50px;
+    width: 80px;
+    padding-top: var(--padding-top-numbers-letters);
+}
+
+#three {
+    grid-area: three;
+    background-color: white;
+    height: 50px;
+    width: 80px;
+    padding-top: var(--padding-top-numbers-letters);
+}
+
+#four {
+    grid-area: four;
+    background-color: white;
+    height: 50px;
+    width: 80px;
+    padding-top: var(--padding-top-numbers-letters);
+}
+
+#a {
+    grid-area: a;
+    background-color: white;
+    height: 50px;
+    width: 80px;
+    padding-top: var(--padding-top-numbers-letters);
+}
+
+#b {
+    grid-area: b;
+    background-color: white;
+    height: 50px;
+    width: 80px;
+    padding-top: var(--padding-top-numbers-letters);
+}
+
+#c {
+    grid-area: c;
+    background-color: white;
+    height: 50px;
+    width: 80px;
+    padding-top: var(--padding-top-numbers-letters);
+}
+
+#d {
+    grid-area: d;
+    background-color: white;
+    height: 50px;
+    width: 80px;
+    padding-top: var(--padding-top-numbers-letters);
+}
