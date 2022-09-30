@@ -9,6 +9,7 @@ body {
 }
 
 section.grid {
+    max-width: 600px;
     display: grid;
     gap: 1rem;
     text-indent: 15px;
